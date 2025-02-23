@@ -64,8 +64,8 @@ DeepSeek
           <th>671B</th>
           <td>404GB</td>
           <td>高性能、多核CPU，服务器配置</td>
-          <td>NVIDIA A100*4张或更多显卡</td>
-          <td>-</td>
+          <td>NVIDIA A100*6张或更多显卡</td>
+          <td>480GB+</td>
           <td>256GB RAM</td>
         </tr>
         <tr>
