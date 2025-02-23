@@ -5,6 +5,55 @@
 1、VPS服务器：[点击查看>>](https://www.vultr.com/?ref=9630595-9J)<br>
 2、搭建工具：[点击下载>>](https://www.hostbuf.com/t/988.html) ，[备用下载>>](https://dl.hostbuf.com/finalshell3/finalshell_windows_x64.exe)
 
+### 一、开始部署：
+1、更新VPS服务器
+
+      apt-get update -y
+
+2、下载 Ollama
+
+      curl -fsSL https://ollama.com/install.sh | sh
+
+3、下载 DeepSeek-R1模型，[点击下载>>](https://ollama.com/library/deepseek-r1)
+
+### 二、放行端口：
+
+      ufw allow 11434
+      ufw status
+
+### 三、设置环境变量：
+1、编辑 ollama.service
+
+      vim /etc/systemd/system/ollama.service
+
+2、在 [Service] 部分，Environment下面添加：
+
+      Environment="OLLAMA_HOST=0.0.0.0"
+      Environment="OLLAMA_ORIGINS=*"
+
+3、保存并退出
+按【ESC】键，再输入“:wq”保存退出
+
+4、重新加载 systemd 并重启 Ollama：
+
+      systemctl daemon-reload
+      systemctl restart ollama
+
+### 查看 Ollama 运行状态：
+
+      systemctl status ollama
+      按【q】退出
+
+### 查看显存占用：
+
+      nvidia-smi
+      apt-get install nvtop -y
+      nvtop
+
+
+
+<hr/>
+
 ### DeepSeek 本地部署硬件配置要求：
 <table border="1" cellpadding="10" cellspacing="0" data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="striped">
       <tbody>
