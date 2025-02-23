@@ -52,7 +52,9 @@
       apt-get install nvtop -y
       nvtop
 
-
+### 四、安装客户端使用 DeepSeek ：
+安装 Chatbox AI [点击查看>>](https://chatboxai.app/zh#download)
+支持在 Windows,macOS,iOS,Android,Linux 使用。
 
 <hr/>
 
