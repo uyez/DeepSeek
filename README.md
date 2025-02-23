@@ -1,7 +1,7 @@
 # DeepSeek linux服务器部署教程，支持 DeepSeek-R1 671b linux远程部署，deepseek 本地部署硬件配置要求
 DeepSeek
 
-
+### DeepSeek 本地部署硬件配置要求：
 <table border="1" cellpadding="10" cellspacing="0" data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="striped">
       <tbody>
         <tr>
