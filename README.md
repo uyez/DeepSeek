@@ -56,7 +56,9 @@
 安装 Chatbox AI [点击查看>>](https://chatboxai.app/zh#download)<br/>
 支持在 Windows, macOS, iOS, Android, Linux 使用。
 
+<br/>
 <hr/>
+<br/>
 
 ### DeepSeek 本地部署硬件配置要求：
 <table border="1" cellpadding="10" cellspacing="0" data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="striped">
