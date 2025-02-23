@@ -66,7 +66,7 @@ DeepSeek
           <td>高性能、多核CPU，服务器配置</td>
           <td>NVIDIA A100*6张或更多显卡</td>
           <td>480GB+</td>
-          <td>256GB RAM</td>
+          <td>256GB+ RAM</td>
         </tr>
         <tr>
           <th colspan="6">仅供参考</th>
