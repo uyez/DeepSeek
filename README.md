@@ -39,12 +39,14 @@
       systemctl daemon-reload
       systemctl restart ollama
 
-### 查看 Ollama 运行状态：
+<br/>
+
+#### 查看 Ollama 运行状态：
 
       systemctl status ollama
       按【q】退出
 
-### 查看显存占用：
+#### 查看显存占用：
 
       nvidia-smi
       apt-get install nvtop -y
