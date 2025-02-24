@@ -8,7 +8,7 @@
 ### 一、开始部署：
 1、更新VPS服务器
 
-      apt-get update -y
+  apt-get update -y
 
 2、下载 Ollama
 
