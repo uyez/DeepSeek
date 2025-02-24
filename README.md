@@ -1,5 +1,5 @@
 # DeepSeek linux服务器部署教程，支持 DeepSeek-R1 671b linux远程部署，deepseek 本地部署硬件配置要求
-支持Linux服务器 DeepSeek 本地部署，也支持远程linux服务器部署 DeepSeek。
+支持Linux服务器 DeepSeek 本地部署，也支持远程linux服务器部署 DeepSeek。<br/>
 视频教程：https://youtu.be/L5T7N9LFjro
 
 ### 准备工作：
