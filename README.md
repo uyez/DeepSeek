@@ -8,49 +8,49 @@
 ### 一、开始部署：
 1、更新VPS服务器
 
-  apt-get update -y
+    apt-get update -y
 
 2、下载 Ollama
 
-      curl -fsSL https://ollama.com/install.sh | sh
+    curl -fsSL https://ollama.com/install.sh | sh
 
 3、下载 DeepSeek-R1模型，[点击下载>>](https://ollama.com/library/deepseek-r1)
 
 ### 二、放行端口：
 
-      ufw allow 11434
-      ufw status
+    ufw allow 11434
+    ufw status
 
 ### 三、设置环境变量：
 1、编辑 ollama.service
 
-      vim /etc/systemd/system/ollama.service
+    vim /etc/systemd/system/ollama.service
 
 2、在 [Service] 部分，Environment下面添加：
 
-      Environment="OLLAMA_HOST=0.0.0.0"
-      Environment="OLLAMA_ORIGINS=*"
+    Environment="OLLAMA_HOST=0.0.0.0"
+    Environment="OLLAMA_ORIGINS=*"
 
 3、保存并退出
 按【ESC】键，再输入“:wq”保存退出
 
 4、重新加载 systemd 并重启 Ollama：
 
-      systemctl daemon-reload
-      systemctl restart ollama
+    systemctl daemon-reload
+    systemctl restart ollama
 
 <br/>
 
 #### 查看 Ollama 运行状态：
 
-      systemctl status ollama
-      按【q】退出
+    systemctl status ollama
+    按【q】退出
 
 #### 查看显存占用：
 
-      nvidia-smi
-      apt-get install nvtop -y
-      nvtop
+    nvidia-smi
+    apt-get install nvtop -y
+    nvtop
 
 ### 四、安装客户端使用 DeepSeek ：
 安装 Chatbox AI [点击查看>>](https://chatboxai.app/zh#download)<br/>
