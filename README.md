@@ -31,7 +31,7 @@
     Environment="OLLAMA_HOST=0.0.0.0"
     Environment="OLLAMA_ORIGINS=*"
 
-3、保存并退出
+3、保存并退出<br/>
 按【ESC】键，再输入“:wq”保存退出
 
 4、重新加载 systemd 并重启 Ollama：
